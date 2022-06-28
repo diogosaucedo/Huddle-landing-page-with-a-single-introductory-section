@@ -1,0 +1,27 @@
+@use "../base/colors";
+@use "../base/extends";
+
+.c-icon {
+  @extend %u-display-flex, %u-align-center, %u-justify-center;
+  
+  border: 2px solid colors.$white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  &__image {
+    font-size: 1.6rem;
+    color: colors.$white;
+
+    &:active {
+      color: colors.$soft-magenta;
+    }
+  }
+  &:active {
+    border: 1px solid colors.$soft-magenta;
+    text-decoration: none;
+  }
+}

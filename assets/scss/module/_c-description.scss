@@ -1,0 +1,39 @@
+@use "../base/colors";
+@use "../base/extends";
+
+.c-description {
+  @extend %u-display-flex, %u-flex-direction-column, %u-align-start;
+
+  padding: 3rem 4rem;
+  color: colors.$white;
+
+  &__title {
+    padding: 1rem 0;
+
+    letter-spacing: 0.2rem;
+    font-size: 3.8rem;
+    line-height: 5rem;
+  }
+
+  &__text {
+    padding: 2rem 0;
+
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  &__button {
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: colors.$white;
+    color: colors.$violet;
+
+    &:active {
+      background-color: colors.$soft-magenta;
+      color: colors.$white;
+    }
+  }
+}

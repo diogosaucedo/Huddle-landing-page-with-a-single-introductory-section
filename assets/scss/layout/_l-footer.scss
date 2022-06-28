@@ -1,0 +1,11 @@
+@use "../base/extends";
+
+.l-footer {
+  @extend %u-display-flex, , %u-justify-end;
+
+  width: 100%;
+  
+  .c-icon {
+    margin: 0 0.5rem;
+  }
+}

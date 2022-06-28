@@ -1,0 +1,36 @@
+@media only screen and (max-width: 425px) {
+  .l-container {
+    width: 80%;
+  }
+
+  .l-content {
+    .c-image {
+      width: 100%;
+    }
+
+    .c-description {
+      width: 100%;
+    }
+  }
+
+  .c-logo {
+    width: 14rem;
+  }
+  .c-description {
+    &__title {
+      font-size: 2.2rem;
+      line-height: 3.5rem;
+    }
+
+    &__text {
+      line-height: 2.5rem;
+    }
+    
+    &__button {
+      padding: 1rem 7rem;
+    }
+  }
+  .l-footer {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,17 @@
+@use "../base/extends";
+
+.l-content {
+  @extend %u-display-flex;
+
+  width: 100%;
+
+  .c-image {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .c-description {
+    width: 50%;
+    height: 50%;
+  }
+}
